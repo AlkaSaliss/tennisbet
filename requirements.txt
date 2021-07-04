@@ -1,0 +1,11 @@
+ipywidgets==7.6.3
+jupyterlab
+numpy
+pandas
+plotly
+scikit-learn==0.23.2
+scipy
+xgboost
+catboost
+pycaret
+streamlit
