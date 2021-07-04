@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 from pycaret.classification import load_model, predict_model
 import plotly.express as px
-print(pd.__version__)
+
 
 # Constant vars
 MODEL_PATH = os.path.join(pathlib.Path(__file__).parent.absolute(), "artifacts/model/best_lgbm")
@@ -45,7 +45,7 @@ model, preprocessing_pipeline, dict_categories = load_artifacts()
 
 
 def main():
-    
+    print("#######################################", pd.__version__)
     
     st.header("Prédiction du vainqueur d'un match de tennis ​🎾​🏆​")
     st.write("""Cette application permet de prédire les chances de victoire pour chacun des deux adversaires d'un match de tennis.""")
